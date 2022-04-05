@@ -3,7 +3,7 @@ const Portfolio = () => {
         <div className="portfolio">
             yo, i'm the portfolio component
         </div>
-     );
+     )
 }
  
-export default Portfolio;
+export default Portfolio

@@ -1,4 +1,4 @@
-import './App.css';
+import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import About from './app_components/About'
 import Contact from './app_components/Contact'
@@ -24,7 +24,7 @@ function App() {
         <Footer />
       </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

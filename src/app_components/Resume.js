@@ -3,7 +3,7 @@ const Resume = () => {
         <div className="resume">
             yo, i'm the resume component
         </div>
-     );
+     )
 }
  
-export default Resume;
+export default Resume

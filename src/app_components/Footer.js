@@ -3,7 +3,7 @@ const Footer = () => {
         <div className="footer">
             yo, i'm the footer component
         </div>
-     );
+     )
 }
  
-export default Footer;
+export default Footer
