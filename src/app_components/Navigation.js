@@ -1,6 +1,6 @@
-import { NavItem, NavLink } from "reactstrap"
+import { Nav, NavItem, NavLink } from "reactstrap"
 
-const Nav = () => {
+const Navigation = () => {
     return ( 
         <div className="nav">
             <Nav justified tabs>
@@ -21,7 +21,7 @@ const Nav = () => {
                 </NavItem>
                 <NavItem>
                     <NavLink href="/Portfolio">
-                        Portfolio
+                        Contact
                     </NavLink>
                 </NavItem>
                 <NavItem>
@@ -34,4 +34,4 @@ const Nav = () => {
      )
 }
  
-export default Nav
+export default Navigation

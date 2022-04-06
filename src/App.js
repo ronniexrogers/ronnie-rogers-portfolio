@@ -4,7 +4,7 @@ import About from './app_components/About'
 import Contact from './app_components/Contact'
 import Footer from './app_components/Footer'
 import Home from './app_components/Home'
-import Nav from './app_components/Nav'
+import Nav from './app_components/Navigation'
 import Resume from './app_components/Resume'
 import Portfolio from './app_components/Portfolio'
 
