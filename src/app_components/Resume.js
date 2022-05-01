@@ -1,7 +1,7 @@
 const Resume = () => {
     return ( 
         <div className="resume">
-            yo, i'm the resume component
+            <a href="../../Resources/Ronnie-Rogers-Resume.pdf" download="proposed_file_name">Download Resume</a>
         </div>
      )
 }

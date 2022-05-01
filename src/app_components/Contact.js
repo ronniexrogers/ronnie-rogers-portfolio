@@ -28,7 +28,7 @@ const Contact = () => {
 
     return ( 
         <div className="contact">
-            <form onSubmit={ handleSubmit } action="https://submit-form.com/ageibyG6">
+            <form onSubmit={ handleSubmit }>
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Name" required="true" onChange={(e) => setName(e.target.value)}  />
                 <label for="email">Email</label>
