@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap'
 const axios = require('axios')
 
 const Contact = () => {
@@ -28,21 +29,26 @@ const Contact = () => {
 
     return ( 
         <div className="contact">
-            <form onSubmit={ handleSubmit }>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Name" required="true" onChange={(e) => setName(e.target.value)}  />
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Email" required="true" onChange={(e) => setEmail(e.target.value)}/>
-                <label for="message">Message</label>
-                <textarea
+            <Form onSubmit={ handleSubmit }>
+                <FormGroup>
+                <Label for="name">Name</Label>
+                <Input type="text" id="name" name="name" placeholder="Name" required="true" onChange={(e) => setName(e.target.value)}  />
+                </FormGroup>
+                <FormGroup>
+                <Label for="email">Email</Label>
+                <Input type="email" id="email" name="email" placeholder="Email" required="true" onChange={(e) => setEmail(e.target.value)}/>
+                </FormGroup>
+                <Label for="message">Message</Label>
+                <Input
+                    type="textarea"
                     id="message"
                     name="message"
                     placeholder="Message"
                     required="true"
                     onChange={(e) => setMessage(e.target.value)}
-                ></textarea>
-                <button type="submit">Send</button>
-            </form>
+                />
+                <Button color="primary" block type="submit">Send</Button>
+            </Form>
         </div>
      )
 }

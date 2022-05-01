@@ -21,7 +21,7 @@ const Navigation = () => {
                 </NavItem>
                 <NavItem>
                     <NavLink href="/Portfolio">
-                        Contact
+                        Portfolio
                     </NavLink>
                 </NavItem>
                 <NavItem>
