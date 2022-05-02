@@ -1,5 +1,6 @@
-import { useState } from "react"
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap'
+import { useRef, useState } from "react"
+import { Button, Form, FormGroup, Input } from 'reactstrap'
+import ReCAPTCHA from "react-google-recaptcha"
 const axios = require('axios')
 
 const Contact = () => {
@@ -7,7 +8,15 @@ const Contact = () => {
     const [name, setName] = useState('')
     const [message, setMessage] = useState('')
     const [email, setEmail] = useState('')
-    const formSparkUrl = `https://submit-form.com/ageibyG6`
+    const [recaptchaToken, setRecaptchaToken] = useState('')
+    const recaptchaKey = '6LdcgLcfAAAAAHcB1XBHPPWwDN3jGzlad98BYcRa'
+    const recaptchaRef = useRef()
+    const formId = 'ageibyG6'
+    const formSparkUrl = `https://submit-form.com/${formId}`
+
+    const updateRecaptchaToken = (token) => {
+        setRecaptchaToken(token)
+    }
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -19,9 +28,11 @@ const Contact = () => {
             name: name,
             email: email,
             message: message,
+            "g-recaptcha-response": recaptchaToken
         }
         try {
             await axios.post(formSparkUrl, formData)
+            recaptchaRef.current.reset()
         }catch(err) {
             alert(err)
         }
@@ -32,14 +43,11 @@ const Contact = () => {
             <h3>Let's get in touch!</h3>
             <Form onSubmit={ handleSubmit }>
                 <FormGroup>
-                {/* <Label for="name">Name</Label> */}
                 <Input type="text" id="name" name="name" placeholder="Name" required="true" onChange={(e) => setName(e.target.value)}  />
                 </FormGroup>
                 <FormGroup>
-                {/* <Label for="email">Email</Label> */}
                 <Input type="email" id="email" name="email" placeholder="Email" required="true" onChange={(e) => setEmail(e.target.value)}/>
                 </FormGroup>
-                {/* <Label for="message">Message</Label> */}
                 <Input
                     type="textarea"
                     id="message"
@@ -47,6 +55,12 @@ const Contact = () => {
                     placeholder="Message"
                     required="true"
                     onChange={(e) => setMessage(e.target.value)}
+                />
+                <ReCAPTCHA 
+                className="captcha"
+                ref={recaptchaRef}
+                sitekey={recaptchaKey}
+                onChange={updateRecaptchaToken}
                 />
                 <Button className="form-button" color="primary" block type="submit">Send</Button>
             </Form>
