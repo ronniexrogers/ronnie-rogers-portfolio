@@ -41,6 +41,7 @@ const Contact = () => {
     return ( 
         <div className="contact">
             <h3>Let's get in touch!</h3>
+        <div className="contact-form">
             <Form onSubmit={ handleSubmit }>
                 <FormGroup>
                 <Input type="text" id="name" name="name" placeholder="Name" required="true" onChange={(e) => setName(e.target.value)}  />
@@ -64,6 +65,7 @@ const Contact = () => {
                 />
                 <Button className="form-button" color="primary" block type="submit">Send</Button>
             </Form>
+            </div>
         </div>
      )
 }

@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  position: relative;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.479);
 }
 
 .footer{
@@ -36,4 +39,29 @@ a{
   width: 40%;
   height: 40%;
   border: 1px solid black;
+}
+
+.contact {
+  background-color: rgba(255, 255, 255, 0.479);
+  height: 100vh;
+  width: 100vw;
+  margin: 10px auto;
+}
+
+.contact-form{
+  width: 90%;
+  margin: 10px auto;
+  border: solid rgba(0, 0, 0, 0.089) 1px;
+  border-radius: 2%;
+  align-content: center;
+}
+
+.captcha{
+  margin: 10px auto 10px;
+}
+
+.project-div, .about-text{
+  margin: 10px auto;
+  width: 90%;
+  border: solid black 1px;
 }
