@@ -29,16 +29,17 @@ const Contact = () => {
 
     return ( 
         <div className="contact">
+            <h3>Let's get in touch!</h3>
             <Form onSubmit={ handleSubmit }>
                 <FormGroup>
-                <Label for="name">Name</Label>
+                {/* <Label for="name">Name</Label> */}
                 <Input type="text" id="name" name="name" placeholder="Name" required="true" onChange={(e) => setName(e.target.value)}  />
                 </FormGroup>
                 <FormGroup>
-                <Label for="email">Email</Label>
+                {/* <Label for="email">Email</Label> */}
                 <Input type="email" id="email" name="email" placeholder="Email" required="true" onChange={(e) => setEmail(e.target.value)}/>
                 </FormGroup>
-                <Label for="message">Message</Label>
+                {/* <Label for="message">Message</Label> */}
                 <Input
                     type="textarea"
                     id="message"
@@ -47,7 +48,7 @@ const Contact = () => {
                     required="true"
                     onChange={(e) => setMessage(e.target.value)}
                 />
-                <Button color="primary" block type="submit">Send</Button>
+                <Button className="form-button" color="primary" block type="submit">Send</Button>
             </Form>
         </div>
      )

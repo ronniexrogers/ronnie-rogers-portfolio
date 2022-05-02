@@ -27,6 +27,13 @@ a{
   color: inherit; 
 } 
 
-.download{
+.download, .form-button{
   margin-top: 5px;
+}
+
+.profile-picture{
+  border-radius: 100%;
+  width: 40%;
+  height: 40%;
+  border: 1px solid black;
 }

@@ -10,13 +10,8 @@ const Navigation = () => {
                     </NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/About">
-                        About
-                    </NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink href="/Contact">
-                        Contact
+                    <NavLink href="/Resume">
+                        Resume
                     </NavLink>
                 </NavItem>
                 <NavItem>
@@ -25,8 +20,13 @@ const Navigation = () => {
                     </NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/Resume">
-                        Resume
+                    <NavLink href="/About">
+                        About
+                    </NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink href="/Contact">
+                        Contact
                     </NavLink>
                 </NavItem>
             </Nav>
