@@ -8,6 +8,8 @@ const Resume = () => {
     return ( 
         <div className="resume">
 
+            <h3>Résumé</h3>
+
             <div className="download">
             <a download href={ resume }>
             <Button color="primary" size="lg" block >

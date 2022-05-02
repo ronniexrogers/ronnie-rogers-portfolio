@@ -3,7 +3,7 @@ import { Nav, NavItem, NavLink } from "reactstrap"
 const Navigation = () => {
     return ( 
         <div className="nav">
-            <Nav justified tabs>
+            <Nav justified >
                 <NavItem>
                     <NavLink active href="/">
                         Home

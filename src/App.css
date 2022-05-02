@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Roboto:ital,wght@1,100&display=swap');
+
 .App {
   text-align: center;
   position: relative;
   min-height: 100vh;
-  background-color: rgba(255, 255, 255, 0.479);
+  /* background-image: url("./app_components/Resources/marble.png"); */
+  background-color: rgba(255, 255, 255, 0.545);
+  font-family: 'Roboto';
+  font-weight: bolder;
 }
 
 .footer{
@@ -34,13 +39,6 @@ a{
   margin-top: 5px;
 }
 
-.profile-picture{
-  border-radius: 100%;
-  width: 40%;
-  height: 40%;
-  border: 1px solid black;
-}
-
 .contact {
   background-color: rgba(255, 255, 255, 0.479);
   height: 100vh;
@@ -63,5 +61,45 @@ a{
 .project-div, .about-text{
   margin: 10px auto;
   width: 90%;
-  border: solid black 1px;
+  border: solid rgba(0, 0, 0, 0.091) 1px;
+  border-radius: 1px;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem; 
+}
+
+h3{
+  font-family: 'DotGothic16';
+  font-style: italic;
+}
+
+.profile-picture{
+  border-radius: 100%;
+  width: 50%;
+  height: 50%;
+  border: 1px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+div{
+  background-color: rgba(245, 245, 220, 0.086);
+}
+
+h6{
+  font-weight: bolder;
+}
+
+.socials{
+  width: 20%;
+  height: 20%;
+  margin: 0px 10px 0 10px;
+}
+
+.home {
+  margin-top: 10px;
 }
