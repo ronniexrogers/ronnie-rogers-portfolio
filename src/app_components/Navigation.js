@@ -1,31 +1,32 @@
 import { Nav, NavItem, NavLink } from "reactstrap"
 
+
 const Navigation = () => {
     return ( 
         <div className="nav">
-            <Nav justified >
+            <Nav className='nav-bar' justified >
                 <NavItem>
-                    <NavLink active href="/">
+                    <NavLink className="navlink" active href="/">
                         Home
                     </NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/Resume">
+                    <NavLink className="navlink" href="/Resume">
                         Resume
                     </NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/Portfolio">
+                    <NavLink className="navlink" href="/Portfolio">
                         Portfolio
                     </NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/About">
+                    <NavLink className="navlink" href="/About">
                         About
                     </NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/Contact">
+                    <NavLink className="navlink" href="/Contact">
                         Contact
                     </NavLink>
                 </NavItem>
