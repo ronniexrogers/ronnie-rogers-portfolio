@@ -31,10 +31,10 @@ const Portfolio = () => {
                 <CardText>
                 "Denisse On Fire" is a full stack web application I developed for a local cosmetologist.  Users are able to sign in and create appointments with image upload.  The salon owner is able to sign in, view/edit appointments, and add/edit photos to the gallery.
                 </CardText>
-                <CardLink href="https://www.Denisseonfire.com">
+                <CardLink href="https://www.Denisseonfire.com" target="_blank" rel="noopener noreferrer">
                     Check it out!
                 </CardLink>
-                <CardLink href="https://github.com/ronniexrogers/salon-app">
+                <CardLink href="https://github.com/ronniexrogers/salon-app" target="_blank" rel="noopener noreferrer">
                     Github Repo
                 </CardLink>
                 </CardBody>
@@ -63,10 +63,10 @@ const Portfolio = () => {
                 <CardText>
                 "Vegan Recipe Finder" is a React web application I developed for myself.  Users are able to search for recipes based on ingredients they input.  The site then uses the search criteria to filter through recipes in an external API and return a list of corresponding recipes.
                 </CardText>
-                <CardLink href="https://veganrecipefinder.netlify.app/">
+                <CardLink href="https://veganrecipefinder.netlify.app/" target="_blank" rel="noopener noreferrer">
                     Check it out!
                 </CardLink>
-                <CardLink href="https://github.com/ronniexrogers/vegan-recipe-maker">
+                <CardLink href="https://github.com/ronniexrogers/vegan-recipe-maker" target="_blank" rel="noopener noreferrer">
                     Github Repo
                 </CardLink>
                 </CardBody>
@@ -95,10 +95,10 @@ const Portfolio = () => {
                 <CardText>
                 My very first project is the classic casino game of Blackjack.  It is player vs an A.I. dealer.  The objective is to score as close to 21 as you can without going over.
                 </CardText>
-                <CardLink href="https://ronnie-rogers-blackjack.netlify.app/">
+                <CardLink href="https://ronnie-rogers-blackjack.netlify.app/" target="_blank" rel="noopener noreferrer">
                     Check it out!
                 </CardLink>
-                <CardLink href="https://github.com/ronniexrogers/blackjack-game">
+                <CardLink href="https://github.com/ronniexrogers/blackjack-game" target="_blank" rel="noopener noreferrer">
                     Github Repo
                 </CardLink>
                 </CardBody>
