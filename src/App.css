@@ -4,10 +4,10 @@
   text-align: center;
   position: relative;
   min-height: 100vh;
-  /* background-image: url("./app_components/Resources/marble.png"); */
-  background-color: rgba(255, 255, 255, 0.545);
   font-family: 'Roboto';
   font-weight: bolder;
+  background-color: #f0f0f6;
+  background-image: linear-gradient(180deg, #f0f0f6 0%, #a7bbc3 100%);
 }
 
 .footer{
@@ -21,12 +21,6 @@
   width: 100%;
 }
 
-.react-pdf__Page__canvas {
-  margin: 0 auto;
-  width: 100% !important;
-  height: 100% !important;
-}
-
 a{ 
   color: inherit; 
 } 
@@ -36,8 +30,6 @@ a{
 }
 
 .contact {
-  background-color: rgba(255, 255, 255, 0.479);
-  height: 100vh;
   width: 100vw;
   margin: 10px auto;
 }
@@ -54,11 +46,12 @@ a{
   margin: 10px auto 10px;
 }
 
-.project-div, .about-text{
+.project-div, .about-text, .contact-form{
   margin: 10px auto;
   width: 90%;
-  border: solid rgba(0, 0, 0, 0.091) 1px;
-  border-radius: 1px;
+  border: solid rgba(0, 0, 0, 0.203) 1px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.664);
 }
 
 .footer{
@@ -80,10 +73,6 @@ h3{
   border: 1px solid black;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-div{
-  background-color: rgba(245, 245, 220, 0.086);
 }
 
 h6{
@@ -124,5 +113,29 @@ ul{
 
 .nav-bar {
   width: 100%;
-  background-color: rgba(219, 219, 219, 0.294);
+  background-color: rgba(255, 255, 255, 0.93);
+}
+
+.pdf-object {
+  width: 100%;
+  height: 1200px;
+}
+
+@media only screen and (max-width: 400px) {
+
+
+  .resume{
+    width: 390px;
+    height: 100vh;
+  }
+
+  .pdf {
+    height: 100%;
+    width: 100%;
+  }
+
+  .pdf-object {
+  height: 100%;
+  width: 100%;
+  }
 }

@@ -21,7 +21,7 @@ function App() {
           <Route path="/Resume" element={ <Resume /> } />
           <Route path="/Portfolio" element={ <Portfolio /> } />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </div>
   )

@@ -1,4 +1,3 @@
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
 import { Button } from 'reactstrap'
 
 const Resume = () => {
@@ -17,12 +16,9 @@ const Resume = () => {
             </Button>
             </a>
             </div>
-
             <div className="pdf">
-            <Document file={ resume }>
-                <Page pageNumber={1} />
-                <Page pageNumber={2} />
-            </Document>
+            <object className='pdf-object' data={resume} type="application/pdf">
+            </object>
             </div>
 
         </div>
