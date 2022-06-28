@@ -2,7 +2,6 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import About from './app_components/About'
 import Contact from './app_components/Contact'
-import Footer from './app_components/Footer'
 import Home from './app_components/Home'
 import Nav from './app_components/Navigation'
 import Resume from './app_components/Resume'
@@ -21,7 +20,6 @@ function App() {
           <Route path="/Resume" element={ <Resume /> } />
           <Route path="/Portfolio" element={ <Portfolio /> } />
         </Routes>
-        {/* <Footer /> */}
       </Router>
     </div>
   )
