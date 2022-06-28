@@ -16,7 +16,7 @@ const About = ({ titleAnimation }) => {
                     <li>Going to concerts</li>
                     <li>Fashion design</li>
                     <li>Gaming</li>
-                    <li>Hiking</li>
+                    <li>Skateboarding</li>
                     <li>Traveling</li>
                 </ul>
                 </List>
