@@ -1,6 +1,6 @@
 import { Card, CardBody, CardLink, CardSubtitle, CardTitle, CardText } from "reactstrap"
 
-const Portfolio = () => {
+const Portfolio = ({ titleAnimation }) => {
 
     const denisseScreenShot = require('./Resources/denisse-on-fire-SS.png')
     const veganScreenShot = require('./Resources/vegan-recipe-SS.png')
@@ -8,7 +8,7 @@ const Portfolio = () => {
 
     return ( 
         <div className="portfolio">
-            <h3>Portfolio</h3>
+            <h3 className={ titleAnimation }>Portfolio</h3>
             <div className="project-div">
             <Card>
                 <CardBody>

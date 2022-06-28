@@ -3,7 +3,7 @@ import { Button, Form, FormGroup, Input } from 'reactstrap'
 import ReCAPTCHA from "react-google-recaptcha"
 const axios = require('axios')
 
-const Contact = () => {
+const Contact = ({ titleAnimation }) => {
 
     const [name, setName] = useState('')
     const [message, setMessage] = useState('')
@@ -40,7 +40,7 @@ const Contact = () => {
 
     return ( 
         <div className="contact">
-            <h3>Let's get in touch!</h3>
+            <h3 className={ titleAnimation }>Let's get in touch!</h3>
         <div className="contact-form">
             <Form onSubmit={ handleSubmit }>
                 <FormGroup>

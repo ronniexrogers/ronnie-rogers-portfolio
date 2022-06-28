@@ -1,9 +1,9 @@
-import 'animate.css'
 import { useState } from 'react'
 import Resume from './Resume'
 import Portfolio from './Portfolio'
+import 'animate.css'
 
-const Home = () => {
+const Home = ({ titleAnimation }) => {
 
     const profilePicture = require('./Resources/selfie.jpg')
     const linkedIn = require('./Resources/LinkedIn-Logo.png')
@@ -13,7 +13,7 @@ const Home = () => {
 
     return ( 
         <div className="home">
-            <div className="animate__animated animate__backInLeft">
+            <div className={ titleAnimation }>
                 <h3>Ronnie R. Rogers</h3>
                 <h3>Full Stack Software Engineer</h3>
                 <h6>Javascript / React / Node / Express / Python</h6>
