@@ -155,10 +155,14 @@ ul{
   margin: 20px 0px 0px 0px;
 }
 
+.isMobile {
+  display: none;
+}
+
 @media only screen and (max-width: 400px) {
 
   .about-text, .contact-form{
-    width: 80vw;
+    width: 85vw;
   }
 
   .navlink {
@@ -170,12 +174,18 @@ ul{
   }
 
   .pdf {
-    height: 100%;
-    width: 100%;
+    display: none;
   }
 
-  .pdf-object {
-  height: 750px;
-  width: 90%;
+  .isMobile {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  .navlink {
+    font-size: 12px !important;
   }
 }

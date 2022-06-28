@@ -26,13 +26,13 @@ const Home = ({ titleAnimation }) => {
             <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/ronniexrogers">
             <img alt='github logo' className='socials' src={ github } />  
             </a>
-            <div className={ modalState }>
+            {/* <div className={ modalState }>
                 Hey there! 
                 <br></br>
                 I see you're visiting from a mobile browser.  This site isn't quite yet optimized for mobile browsing.  I recommend viewing from a desktop browser for the best experience in the meantime!
                 <br></br>
                 <button onClick={() => setModalState('modalClosed')}>Close</button>
-            </div>
+            </div> */}
             <div className="resume">
                 <Resume />
             </div>
