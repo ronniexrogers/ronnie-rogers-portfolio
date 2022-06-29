@@ -63,7 +63,7 @@ const Contact = ({ titleAnimation }) => {
                 sitekey={recaptchaKey}
                 onChange={updateRecaptchaToken}
                 />
-                <Button className="form-button" color="primary" block type="submit">Send</Button>
+                <Button className="form-button" block type="submit">Send</Button>
             </Form>
             </div>
         </div>

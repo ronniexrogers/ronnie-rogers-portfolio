@@ -20,10 +20,10 @@ const Home = ({ titleAnimation }) => {
             </div>
             <img alt='selfie' className='animate__animated animate__rollIn profile-picture' src={ profilePicture } />  
             <br></br>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ronniexrogers">
+            <a target="_blank" className='socials' rel="noopener noreferrer" href="https://www.linkedin.com/in/ronniexrogers">
                 <img alt='linkedin logo' className='socials' src={ linkedIn } /> 
             </a> 
-            <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/ronniexrogers">
+            <a target="_blank" className='socials' rel="noopener noreferrer" href="https://www.github.com/ronniexrogers">
             <img alt='github logo' className='socials' src={ github } />  
             </a>
             {/* <div className={ modalState }>

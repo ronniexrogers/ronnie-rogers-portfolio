@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import { Button } from 'reactstrap'
-
 const Resume = ({ titleAnimation }) => {
 
     const resume = require('./Resources/Ronnie-Rogers-Resume.pdf')
@@ -13,11 +10,15 @@ const Resume = ({ titleAnimation }) => {
             <h3 className={ titleAnimation }>Résumé</h3>
 
             <div className="download">
-            <a download href={ resume }>
-            <Button color="primary" size="lg" block >
-                Download Résumé
-            </Button>
-            </a>
+                <a className='download-text' download href={ resume }>
+                    <button className="pushable">
+                        <span className="shadow"></span>
+                        <span className="edge"></span>
+                        <span className="front">
+                            Download
+                        </span>
+                    </button>
+                </a>
             </div>
             <div className="pdf">
                 <object className='pdf-object' data={resume} type="application/pdf">
