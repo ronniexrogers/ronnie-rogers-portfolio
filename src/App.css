@@ -9,6 +9,7 @@
   font-weight: bolder;
   background-color: #f0f0f6;
   background-image: linear-gradient(180deg, #f0f0f6 0%, #7e9aa5 100%);
+  margin-top: 40px;
 }
 
 .App:not(.pdf-object) {
@@ -39,7 +40,6 @@ a:not(.socials):hover{
 
 .contact {
   width: 100vw;
-  margin: 10px auto;
 }
 
 .contact-form{
@@ -59,7 +59,8 @@ a:not(.socials):hover{
   width: 90%;
   border: solid rgba(0, 0, 0, 0.203) 1px;
   border-radius: 6px;
-  background-color: rgba(255, 255, 255, 0.664);
+  background-color: rgba(176, 176, 176, 0.664) !important;
+  max-width: 750px;
 }
 
 .about-text, .contact-form{
@@ -69,6 +70,7 @@ a:not(.socials):hover{
   border-radius: 6px;
   background-color: rgba(255, 255, 255, 0.664);
   padding: 5px;
+  max-width: 750px;
 }
 
 .footer{
@@ -113,10 +115,6 @@ h6{
   filter: alpha(opacity=100);
 }
 
-.home {
-  margin-top: 10px;
-}
-
 ul{
   text-align: left;
 }
@@ -134,12 +132,16 @@ ul{
 .nav-bar {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.93);
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
 .pdf-object {
   width: 90%;
   height: 1200px;
   border-radius: 6px;
+  max-width: 750px;
 }
 
 .mobile-modal {
@@ -158,14 +160,9 @@ ul{
   display: none
 }
 
-.resume, .portfolio {
-  margin: 20px 0px 0px 0px;
-}
-
 .isMobile {
   display: none;
 }
-
 
 .pushable {
   position: relative;
