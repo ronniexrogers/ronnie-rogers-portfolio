@@ -1,6 +1,6 @@
 const Resume = ({ titleAnimation }) => {
 
-    const resume = require('./Resources/Ronnie-Rogers-Resume.pdf')
+    const resume = require('./Resources/ronnieRogersResume.pdf')
     const resumeJPG1 = require('./Resources/resume1.jpg')
     const resumeJPG2 = require('./Resources/resume2.jpg')
 

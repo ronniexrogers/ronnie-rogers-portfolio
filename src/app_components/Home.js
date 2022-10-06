@@ -5,7 +5,7 @@ import 'animate.css'
 
 const Home = ({ titleAnimation }) => {
 
-    const profilePicture = require('./Resources/selfie.jpg')
+    const profilePicture = require('./Resources/selfie2.jpg')
     const linkedIn = require('./Resources/LinkedIn-Logo.png')
     const github = require('./Resources/github-logo.png')
 
